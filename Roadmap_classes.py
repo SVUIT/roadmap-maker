@@ -8,13 +8,7 @@ class subject:
     PracticeCredits: int
 
 class semester:
-    subjects1: subject
-    subjects2: Optional[subject] = None
-    subjects3: Optional[subject] = None
-    subjects4: Optional[subject] = None
-    subjects5: Optional[subject] = None
-    subjects6: Optional[subject] = None
-    subjects7: Optional[subject] = None
+    subjects1: List[subject]
 
 class table_roadmap:
     semester1: List[semester]
