@@ -1,292 +1,308 @@
 {
-    "semester1": [
-        {
-            "subject1": {
+    "semester1":
+    {
+        "subjects": 
+        [
+            {
                 "CourseCode": "IT001",
                 "VietnameseName": "Nhập môn lập trình",
                 "TheoryCredits": 3,
                 "PracticeCredits": 1
             },
-            "subject2": {
+            {
                 "CourseCode": "MA006",
                 "VietnameseName": "Giải tích",
                 "TheoryCredits": 4,
                 "PracticeCredits": 0
             },
-            "subject3": {
+            {
                 "CourseCode": "MA003",
                 "VietnameseName": "Đại số tuyến tính",
                 "TheoryCredits": 3,
                 "PracticeCredits": 0
             },
-            "subject4": {
+            {
                 "CourseCode": "PH001",
                 "VietnameseName": "Nhập môn điện tử",
                 "TheoryCredits": 3,
                 "PracticeCredits": 0
             },
-            "subject5": {
+            {
                 "CourseCode": "NT005",
                 "VietnameseName": "Giới thiệu ngành MMT&TTDL",
                 "TheoryCredits": 1,
                 "PracticeCredits": 0
             },
-            "subject6": {
+            {
                 "CourseCode": "ENG01",
                 "VietnameseName": "Anh văn 1",
                 "TheoryCredits": 4,
                 "PracticeCredits": 0
             },
-            "subject7": {
+            {
                 "CourseCode": "ME001",
                 "VietnameseName": "Giáo dục quóc phòng",
                 "TheoryCredits": 0,
                 "PracticeCredits": 0
             }
-        }
-    ],
-    "semester2": [
-        {
-            "subject1": {
+        ]
+    },
+    "semester2":
+    {
+        "subjects":
+        [
+            {
                 "CourseCode": "IT002",
                 "VietnameseName": "Lập trình hướng đối tượng",
                 "TheoryCredits": 3,
                 "PracticeCredits": 1
             },
-            "subject2": {
+            {
                 "CourseCode": "IT003",
                 "VietnameseName": "Cấu trúc dữ liệu và giải thuật",
                 "TheoryCredits": 3,
                 "PracticeCredits": 1
             },
-            "subject3": {
+            {
                 "CourseCode": "PH002",
                 "VietnameseName": "Nhập môn mạch số",
                 "TheoryCredits": 3,
                 "PracticeCredits": 1
             },
-            "subject4": {
+            {
                 "CourseCode": "MA004",
                 "VietnameseName": "Cấu trúc rời rạc",
                 "TheoryCredits": 4,
                 "PracticeCredits": 0
             },
-            "subject5": {
+            {
                 "CourseCode": "MA005",
                 "VietnameseName": "Xác suất thống kê",
                 "TheoryCredits": 3,
                 "PracticeCredits": 0
             },
-            "subject6": {
+            {
                 "CourseCode":"ENG02",
                 "VietnameseName":"Anh văn 2",
                 "TheoryCredits": 4,
                 "PracticeCredits": 0
             },
-            "subject7":{
+            {
                 "CourseCode":"PE012",
                 "VietnameseName":"Giáo dục thể chất",
                 "TheoryCredits": 0,
                 "PracticeCredits": 0
             }
-        }
-    ],
-    "semester3": [
-        {
-            "subject1": {
+        ]
+    },
+    "semester3":
+    {
+        "subjects":
+        [
+            {
                 "CourseCode": "IT004",
                 "VietnameseName": "Cơ sở dữ liệu",
                 "TheoryCredits": 3,
                 "PracticeCredits": 1
             },
-            "subject2": {
+            {
                 "CourseCode": "IT005",
                 "VietnameseName": "Nhập môn mạng máy tính",
                 "TheoryCredits": 3,
                 "PracticeCredits": 1
             },
-            "subject3": {
+            {
                 "CourseCode": "IT006",
                 "VietnameseName": "Kiến trúc máy tính",
                 "TheoryCredits": 3,
                 "PracticeCredits": 0
             },
-            "subject4": {
+            {
                 "CourseCode": "SS004",
                 "VietnameseName": "Kỹ năng nghề nghiệp",
                 "TheoryCredits": 0,
                 "PracticeCredits": 2
             },
-            "subject5": {
+            {
                 "CourseCode": "ENG03",
                 "VietnameseName": "Anh văn 3",
                 "TheoryCredits": 4,
                 "PracticeCredits": 0
             }
-        }
-    ],
-    "semester4": [
-        {
-            "subject1": {
+        ]
+    },
+    "semester4":
+    {
+        "subjects":
+        [
+            {
                 "CourseCode": "NT132",
                 "VietnameseName": "Quản trị mạng và hệ thống",
                 "TheoryCredits": 3,
                 "PracticeCredits": 1
             },
-            "subject2": {
+            {
                 "CourseCode": "NT106",
                 "VietnameseName": "Lập trình mạng căn bản",
                 "TheoryCredits": 2,
                 "PracticeCredits": 1
             },
-            "subject3": {
+            {
                 "CourseCode": "IT007",
                 "VietnameseName": "Hệ điều hành",
                 "TheoryCredits": 3,
                 "PracticeCredits": 1
             },
-            "subject4": {
+            {
                 "CourseCode": "SS009",
                 "VietnameseName": "Chủ nghĩa xã hội khoa học",
                 "TheoryCredits": 2,
                 "PracticeCredits": 0
             },
-            "subject5": {
+            {
                 "CourseCode": "NT105",
                 "VietnameseName": "Truyền dữ liệu",
                 "TheoryCredits": 3,
                 "PracticeCredits": 1
             }
-        }
-    ],
-    "semester5": [
-        {
-            "subject1": {
+        ]
+    },
+    "semester5": 
+    {
+        "subjects":
+        [
+            {
                 "CourseCode": "NT101",
                 "VietnameseName": "An toàn mạng máy tính",
                 "TheoryCredits": 3,
                 "PracticeCredits": 1
             },
-            "subject2": {
+            {
                 "CourseCode": "NT131",
                 "VietnameseName": "Hệ thống nhúng mạng không dây",
                 "TheoryCredits": 3,
                 "PracticeCredits": 1
             },
-            "subject3": {
+            {
                 "CourseCode": "NT118",
                 "VietnameseName": "Phát triển ứng dụng trên thiết bị di động",
                 "TheoryCredits": 2,
                 "PracticeCredits": 1
             },
-            "subject4": {
+            {
                 "CourseCode": "NT113",
                 "VietnameseName": "Thiết kế mạng",
                 "TheoryCredits": 2,
                 "PracticeCredits": 1
             },
-            "subject5": {
+            {
                 "CourseCode": "SS003",
                 "VietnameseName": "Tư tưởng Hồ Chí Minh",
                 "TheoryCredits": 2,
                 "PracticeCredits": 0
             }
-        }
-    ],
-    "semester6": [
-        {
-            "subject1": {
+        ]
+    },
+    "semester6":
+    {
+        "subjects":
+        [
+            {
                 "CourseCode": "NT114",
                 "VietnameseName": "Đồ án chuyên ngành",
                 "TheoryCredits": 0,
                 "PracticeCredits": 2
             },
-            "subject2": {
+            {
                 "CourseCode": "SS007",
                 "VietnameseName": "Triết học Mác - Lênin",
                 "TheoryCredits": 3,
                 "PracticeCredits": 0
             },
-            "subject3": {
+            {
                 "CourseCode": "XXXXX",
                 "VietnameseName": "Học phần chuyên ngành",
                 "TheoryCredits": 2,
                 "PracticeCredits": 1
             },
-            "subject4": {
+            {
                 "CourseCode": "XXXXX",
                 "VietnameseName": "Học phần chuyên ngành",
                 "TheoryCredits": 2,
                 "PracticeCredits": 1
             },
-            "subject5": {
+            {
                 "CourseCode": "XXXXX",
                 "VietnameseName": "Học phần chuyên ngành",
                 "TheoryCredits": 2,
                 "PracticeCredits": 1
             },
-            "subject6": {
+            {
                 "CourseCode": "XXXXX",
                 "VietnameseName": "Học phần tự chọn",
                 "TheoryCredits": 2,
                 "PracticeCredits": 1
             }
-        }
-    ],
-    "semester7": [
-        {
-            "subject1": {
+        ]
+    },
+    "semester7":
+    {
+        "subjects":
+        [
+            {
                 "CourseCode": "NT215",
                 "VietnameseName": "Thực tập doanh nghiệp",
                 "TheoryCredits": 2,
                 "PracticeCredits": 0
             },
-            "subject2": {
+            {
                 "CourseCode": "SS006",
                 "VietnameseName": "Pháp luật đại cương",
                 "TheoryCredits": 2,
                 "PracticeCredits": 0
             },
-            "subject3": {
+            {
                 "CourseCode": "SS008",
                 "VietnameseName": "Kinh tế chính trị Mác - Lênin",
                 "TheoryCredits": 2,
                 "PracticeCredits": 0
             },
-            "subject4": {
+            {
                 "CourseCode": "SS010",
                 "VietnameseName": "Lịch sử Đảng Cộng sản Việt Nam",
                 "TheoryCredits": 2,
                 "PracticeCredits": 0
             },
-            "subject5": {
+            {
                 "CourseCode": "XXXXX",
                 "VietnameseName": "Học phần chuyên ngành",
                 "TheoryCredits": 2,
                 "PracticeCredits": 1
             },
-            "subject6": {
+            {
                 "CourseCode": "XXXXX",
                 "VietnameseName": "Học phần tự chọn",
                 "TheoryCredits": 2,
                 "PracticeCredits": 1
             },
-            "subject7": {
+            {
                 "CourseCode": "XXXXX",
                 "VietnameseName": "Học phần tự chọn",
                 "TheoryCredits": 2,
                 "PracticeCredits": 1
             }
-        }
-    ],
-    "semester8": [
-        {
-            "subject1": {
+        ]
+    },
+    "semester8":
+    {
+        "subjects":
+        [
+            {
                 "CourseCode": "NT505",
                 "VietnameseName": "Khóa luận tốt nghiệp",
                 "TheoryCredits": 10,
                 "PracticeCredits": 0
             }
-        }
-    ]
+        ]
+    }
 }

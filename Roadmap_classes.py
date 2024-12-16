@@ -8,19 +8,19 @@ class subject:
     PracticeCredits: int
 
 class semester:
-    subjects_list: List[subject]
+    subjects: List[subject]
 
 class table_roadmap:
-    semester1: List[semester]
-    semester2: List[semester]
-    semester3: List[semester]
-    semester4: List[semester]
-    semester5: List[semester]
-    semester6: List[semester]
-    semester7: List[semester]
-    semester8: Optional[List[semester]] = None
-    semester9: Optional[List[semester]] = None
-    semester10: Optional[List[semester]] = None
-    semester11: Optional[List[semester]] = None
-    semester12: Optional[List[semester]] = None
+    semester1: semester
+    semester2: semester
+    semester3: semester
+    semester4: semester
+    semester5: semester
+    semester6: semester
+    semester7: semester
+    semester8: Optional[semester] = None
+    semester9: Optional[semester] = None
+    semester10: Optional[semester] = None
+    semester11: Optional[semester] = None
+    semester12: Optional[semester] = None
 
