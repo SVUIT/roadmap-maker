@@ -8,7 +8,7 @@ class subject:
     PracticeCredits: int
 
 class semester:
-    subjects1: List[subject]
+    subjects_list: List[subject]
 
 class table_roadmap:
     semester1: List[semester]
