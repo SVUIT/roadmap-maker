@@ -1,17 +1,25 @@
 from typing import Optional, List
 import json
 
-# Này class subject tượng trưng thôi sau sẽ thay bằng class subject cụ thể
 class Subject:
     CourseCode: str
     VietnameseName: str
     TheoryCredits: int
     PracticeCredits: int
-    def __init__(self, CourseCode: str, VietnameseName: str, TheoryCredits: int, PracticeCredits: int):
+    Comments: Optional[str] = None
+    def __init__(
+        self,
+        CourseCode: str,
+        VietnameseName: str,
+        TheoryCredits: int, 
+        PracticeCredits: int,
+        Comments: Optional[str] = None
+    ):
         self.CourseCode = CourseCode
         self.VietnameseName = VietnameseName
         self.TheoryCredits = TheoryCredits
         self.PracticeCredits = PracticeCredits
+        self.Comments = Comments
 
 class Semester:
     subjects: List[Subject]
@@ -67,6 +75,7 @@ def load_semester_data(semester_data: dict) -> Semester:
             VietnameseName=subject["VietnameseName"],
             TheoryCredits=subject["TheoryCredits"],
             PracticeCredits=subject["PracticeCredits"],
+            Comments=subject["Comments"] if "Comments" in subject else None
         )
         for subject in semester_data["subjects"]
     ]
@@ -94,5 +103,6 @@ table = Table_Roadmap(
 )
 
 # Do whatever you want with the table object
-# Example: print(table.semester1.subjects[0].CourseCode)
-# Output: 'IT001'
+# Example:
+#   Code: print(table.semester1.subjects[0].CourseCode)
+#   Output: 'IT001'
