@@ -25,7 +25,8 @@
                 "CourseCode": "PH001",
                 "VietnameseName": "Nhập môn điện tử",
                 "TheoryCredits": 3,
-                "PracticeCredits": 0
+                "PracticeCredits": 0,
+                "Comments": "Môn này không còn từ khóa 2022 trở đi."
             },
             {
                 "CourseCode": "NT005",
@@ -34,16 +35,45 @@
                 "PracticeCredits": 0
             },
             {
+                "CourseCode": "SS006",
+                "VietnameseName": "Pháp luật đại cương",
+                "TheoryCredits": 2,
+                "PracticeCredits": 0
+            },
+            {
                 "CourseCode": "ENG01",
                 "VietnameseName": "Anh văn 1",
                 "TheoryCredits": 4,
-                "PracticeCredits": 0
+                "PracticeCredits": 0,
+                "Comments": "Miễn học phần do nộp chứng chỉ anh văn."
             },
             {
                 "CourseCode": "ENG02",
                 "VietnameseName": "Anh văn 2",
                 "TheoryCredits": 4,
-                "PracticeCredits": 0
+                "PracticeCredits": 0,
+                "Comments": "Miễn học phần do nộp chứng chỉ anh văn."
+            },
+            {
+                "CourseCode": "ENG03",
+                "VietnameseName": "Anh văn 3",
+                "TheoryCredits": 4,
+                "PracticeCredits": 0,
+                "Comments": "Miễn học phần do nộp chứng chỉ anh văn."
+            },
+            {
+                "CourseCode": "ENG04",
+                "VietnameseName": "Anh văn 4",
+                "TheoryCredits": 4,
+                "PracticeCredits": 0,
+                "Comments": "Miễn học phần do nộp chứng chỉ anh văn."
+            },
+            {
+                "CourseCode": "ENG05",
+                "VietnameseName": "Anh văn 5",
+                "TheoryCredits": 4,
+                "PracticeCredits": 0,
+                "Comments": "Miễn học phần do nộp chứng chỉ anh văn."
             }
         ]
     },
@@ -82,15 +112,9 @@
                 "PracticeCredits": 0
             },
             {
-                "CourseCode":"ENG02",
-                "VietnameseName":"Anh văn 2",
-                "TheoryCredits": 4,
-                "PracticeCredits": 0
-            },
-            {
-                "CourseCode":"PE012",
-                "VietnameseName":"Giáo dục thể chất",
-                "TheoryCredits": 0,
+                "CourseCode":"SS003",
+                "VietnameseName":"Tư tưởng Hồ Chí Minh",
+                "TheoryCredits": 2,
                 "PracticeCredits": 0
             }
         ]
@@ -124,9 +148,9 @@
                 "PracticeCredits": 2
             },
             {
-                "CourseCode": "ENG03",
-                "VietnameseName": "Anh văn 3",
-                "TheoryCredits": 4,
+                "CourseCode": "SS007",
+                "VietnameseName": "Triết học Mác - Lênin",
+                "TheoryCredits": 3,
                 "PracticeCredits": 0
             }
         ]
@@ -154,8 +178,8 @@
                 "PracticeCredits": 1
             },
             {
-                "CourseCode": "SS009",
-                "VietnameseName": "Chủ nghĩa xã hội khoa học",
+                "CourseCode": "SS010",
+                "VietnameseName": "Lịch sử Đảng Cộng sản Việt Nam",
                 "TheoryCredits": 2,
                 "PracticeCredits": 0
             },
@@ -181,7 +205,8 @@
                 "CourseCode": "NT131",
                 "VietnameseName": "Hệ thống nhúng mạng không dây",
                 "TheoryCredits": 3,
-                "PracticeCredits": 1
+                "PracticeCredits": 1,
+                "Comments": "NT-IoT starter pack."
             },
             {
                 "CourseCode": "NT118",
@@ -196,8 +221,15 @@
                 "PracticeCredits": 1
             },
             {
-                "CourseCode": "SS003",
-                "VietnameseName": "Tư tưởng Hồ Chí Minh",
+                "CourseCode": "NT536",
+                "VietnameseName": "Công nghệ truyền thông đa phương tiện",
+                "TheoryCredits": 2,
+                "PracticeCredits": 1,
+                "Comments": "Môn chuyên ngành dễ xơi nhất."
+            },
+            {
+                "CourseCode": "SS009",
+                "VietnameseName": "Chủ nghĩa xã hội khoa học",
                 "TheoryCredits": 2,
                 "PracticeCredits": 0
             }
@@ -214,34 +246,32 @@
                 "PracticeCredits": 2
             },
             {
-                "CourseCode": "SS007",
-                "VietnameseName": "Triết học Mác - Lênin",
+                "CourseCode": "TLH025",
+                "VietnameseName": "Tâm lý học nhân cách",
                 "TheoryCredits": 3,
-                "PracticeCredits": 0
+                "PracticeCredits": 0,
+                "Comments": "Môn tự chọn dễ xơi nhất cho mọi ngành."
             },
             {
-                "CourseCode": "XXXXX",
-                "VietnameseName": "Học phần chuyên ngành",
+                "CourseCode": "NT114",
+                "VietnameseName": "Công nghệ mạng viễn thông",
                 "TheoryCredits": 2,
-                "PracticeCredits": 1
+                "PracticeCredits": 1,
+                "Comments": "Do mình yếu devops nên cắn răng chọn môn này."
             },
             {
-                "CourseCode": "XXXXX",
-                "VietnameseName": "Học phần chuyên ngành",
+                "CourseCode": "NT531",
+                "VietnameseName": "Đánh giá hiệu năng hệ thống mạng máy tính",
                 "TheoryCredits": 2,
-                "PracticeCredits": 1
+                "PracticeCredits": 1,
+                "Comments": "Mình yếu luôn ở 2 môn phân bố nên phải chọn :("
             },
             {
-                "CourseCode": "XXXXX",
-                "VietnameseName": "Học phần chuyên ngành",
+                "CourseCode": "NT532",
+                "VietnameseName": "Công nghệ Internet of Things hiện đại",
                 "TheoryCredits": 2,
-                "PracticeCredits": 1
-            },
-            {
-                "CourseCode": "XXXXX",
-                "VietnameseName": "Học phần tự chọn",
-                "TheoryCredits": 2,
-                "PracticeCredits": 1
+                "PracticeCredits": 1,
+                "Comments": "NT-IoT starter pack."
             }
         ]
     },
@@ -256,10 +286,11 @@
                 "PracticeCredits": 0
             },
             {
-                "CourseCode": "SS006",
-                "VietnameseName": "Pháp luật đại cương",
-                "TheoryCredits": 2,
-                "PracticeCredits": 0
+                "CourseCode": "CS313",
+                "VietnameseName": "Khai thác dữ liệu và ứng dụng",
+                "TheoryCredits": 3,
+                "PracticeCredits": 1,
+                "Comments": "Môn tự chọn. Môn này mình bị dụ vô học nên ai sợ AI/ML thì đừng vô :(("
             },
             {
                 "CourseCode": "SS008",
@@ -268,28 +299,11 @@
                 "PracticeCredits": 0
             },
             {
-                "CourseCode": "SS010",
-                "VietnameseName": "Lịch sử Đảng Cộng sản Việt Nam",
+                "CourseCode": "NT121",
+                "VietnameseName": "Thiết bị mạng và truyền thông ĐPT",
                 "TheoryCredits": 2,
-                "PracticeCredits": 0
-            },
-            {
-                "CourseCode": "XXXXX",
-                "VietnameseName": "Học phần chuyên ngành",
-                "TheoryCredits": 2,
-                "PracticeCredits": 1
-            },
-            {
-                "CourseCode": "XXXXX",
-                "VietnameseName": "Học phần tự chọn",
-                "TheoryCredits": 2,
-                "PracticeCredits": 1
-            },
-            {
-                "CourseCode": "XXXXX",
-                "VietnameseName": "Học phần tự chọn",
-                "TheoryCredits": 2,
-                "PracticeCredits": 1
+                "PracticeCredits": 1,
+                "Comments": "Môn chuyên đề tốt nghiệp."
             }
         ]
     },
@@ -298,9 +312,30 @@
         "subjects":
         [
             {
-                "CourseCode": "NT505",
-                "VietnameseName": "Khóa luận tốt nghiệp",
-                "TheoryCredits": 10,
+                "CourseCode": "NT332",
+                "VietnameseName": "Xử lý tín hiệu trong truyền thông",
+                "TheoryCredits": 3,
+                "PracticeCredits": 1,
+                "Comments": "Môn chuyên đề tốt nghiệp."
+            },
+            {
+                "CourseCode": "NT405",
+                "VietnameseName": "Bảo mật Internet",
+                "TheoryCredits": 2,
+                "PracticeCredits": 1,
+                "Comments": "Môn chuyên đề tốt nghiệp."
+            },
+            {
+                "CourseCode": "NT535",
+                "VietnameseName": "Bảo mật Internet of things",
+                "TheoryCredits": 2,
+                "PracticeCredits": 1,
+                "Comments": "Môn tự chọn. NT-IoT starter pack."
+            },
+            {
+                "CourseCode": "PE231",
+                "VietnameseName": "Giáo dục thể chất 1",
+                "TheoryCredits": 0,
                 "PracticeCredits": 0
             }
         ]
