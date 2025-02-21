@@ -195,12 +195,9 @@ To run the application locally on your machine you can follow the steps below :
 - Using npm or yarn 
 
 ```
-1: git clone https://github.com/nishantpainter/personal-kanban.git
-2: cd personal-kanban
-3: npm install
-4: npm install --save typescript@3.9.7
-5: npm start 
-6: Access by http://localhost:3000
+1: npm install
+2: npm start 
+3: Access by http://localhost:3000
 ```
 
 ## Privacy
