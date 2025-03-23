@@ -26,7 +26,6 @@ const RecordForm: React.FC<RecordFormProps> = (props) => {
   const { t } = useTranslation();
   const { record, disabled, formTitle = t("addRecord"), onSubmit, onCancel } = props;
 
-  // ✅ Đặt các hook bên trong function component
   const [subjects, setSubjects] = useState<{ code: string; name: string }[]>([]);
   
   useEffect(() => {
