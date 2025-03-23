@@ -1,7 +1,7 @@
 import { Client, Databases } from "appwrite";
 
 const client = new Client()
-  .setEndpoint("https://cloud.appwrite.io/v1") // Đổi thành endpoint của bạn
+  .setEndpoint("https://cloud.appwrite.io/v1")
   .setProject("67506d930039e1733c08");
 
 const databases = new Databases(client);
