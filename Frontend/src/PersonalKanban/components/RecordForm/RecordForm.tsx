@@ -1,25 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useFormik } from "formik";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
 import Divider from "@material-ui/core/Divider";
-//import Typography from "@material-ui/core/Typography";
 import FormLabel from "@material-ui/core/FormLabel";
-// import FormControl from "@material-ui/core/FormControl";
 import RadioGroup from "@material-ui/core/RadioGroup";
-
+import { MenuItem, FormControl, Select, Typography, InputLabel } from "@material-ui/core";
 import { Record } from "PersonalKanban/types";
 import { RecordColor } from "PersonalKanban/enums";
 import Radio from "PersonalKanban/components/Radio";
 import { useTranslation } from "PersonalKanban/providers/TranslationProvider";
-import {
-  MenuItem,
-  FormControl,
-  Select,
-  Typography,
-  InputLabel
-} from "@material-ui/core";
+import { fetchSubjects } from "../../appwriteConfig";
+import Autocomplete from "@mui/material/Autocomplete";
 
 type RecordFormProps = {
   record?: Record;
@@ -31,16 +24,24 @@ type RecordFormProps = {
 
 const RecordForm: React.FC<RecordFormProps> = (props) => {
   const { t } = useTranslation();
+  const { record, disabled, formTitle = t("addRecord"), onSubmit, onCancel } = props;
 
-  const {
-    record,
-    disabled,
-    formTitle = t("addRecord"),
-    onSubmit,
-    onCancel,
-  } = props;
+  const [subjects, setSubjects] = useState<{ code: string; name: string }[]>([]);
+  
+  useEffect(() => {
+    fetchSubjects()
+      .then((data) => {
+        console.log("Dữ liệu từ Appwrite:", data);
+        const formattedData = data.map((item: any) => ({
+          code: item.code,
+          name: item.name,
+        }));
+        setSubjects(formattedData);
+      })
+      .catch((error) => console.error("Lỗi khi lấy dữ liệu:", error));
+  }, []);
 
-  const { values, errors, handleChange, handleSubmit } = useFormik({
+  const { values, errors, handleChange, handleSubmit, setFieldValue } = useFormik({
     initialValues: Object.assign(
       {
         title: "",
@@ -58,9 +59,6 @@ const RecordForm: React.FC<RecordFormProps> = (props) => {
       if (!values.title) {
         errors.title = t("titleRequired");
       }
-      // if(!values.dropdownOptionSubject){
-      //   errors.dropdownOptionSubject = t("subjectRequired");
-      // }
       return errors;
     },
   });
@@ -74,6 +72,8 @@ const RecordForm: React.FC<RecordFormProps> = (props) => {
           </Typography>
           <Divider />
         </Grid>
+
+        {/* Tiêu đề */}
         <Grid item xs={12}>
           <TextField
             name="title"
@@ -83,38 +83,38 @@ const RecordForm: React.FC<RecordFormProps> = (props) => {
             helperText={errors.title}
             disabled={disabled}
             onChange={handleChange}
+            fullWidth
           />
-        </Grid> 
+        </Grid>
 
+        {/* Dropdown chọn Subject */}
         <Grid item xs={12}>
-        <FormControl fullWidth>
-          <InputLabel id="scrollable-dropdown-label">{t("Select subject")}</InputLabel>
-          <Select
-            labelId="scrollable-dropdown-label"
-            name="title"
-            value={values.dropdownOptionSubject || ""}
-            onChange={handleChange}
-            MenuProps={{
-              PaperProps: {
-                style: {
-                  maxHeight: 200, // Tạo khả năng kéo xuống khi nhiều lựa chọn
-                  overflow: "auto",
-                },
-              },
-            }}
-          >
-            {/* Giả sử bạn có danh sách các lựa chọn từ RecordColor */}
-            {Object.keys(RecordColor).map((key) => (
-              <MenuItem key={key} value={key}>
-                {RecordColor[key as keyof typeof RecordColor]} {/* Hiển thị giá trị của từng lựa chọn */}
-              </MenuItem>
+          <FormControl fullWidth>
+            <InputLabel id="dropdown-subject-label">{t("Select subject")}</InputLabel>
+            <Select
+              labelId="dropdown-subject-label"
+              name="dropdownOptionSubject"
+              value={values.dropdownOptionSubject || ""}
+              onChange={(e) => {
+                const selectedCode = e.target.value;
+                const selectedSubject = subjects.find((subject) => subject.code === selectedCode);
+
+                setFieldValue("dropdownOptionSubject", selectedCode);
+                if (selectedSubject) {
+                  setFieldValue("title", selectedSubject.name); 
+                }
+              }}
+            >
+            {subjects.map((subject) => (
+            <MenuItem key={subject.code} value={subject.code}>
+              {subject.name}
+            </MenuItem>
             ))}
-          </Select>
-        </FormControl>
-      </Grid>
+            </Select>
+          </FormControl>
+        </Grid>
 
-
-
+        {/* Mô tả */}
         <Grid item xs={12}>
           <TextField
             multiline
@@ -126,8 +126,11 @@ const RecordForm: React.FC<RecordFormProps> = (props) => {
             helperText={errors.description}
             disabled={disabled}
             onChange={handleChange}
+            fullWidth
           />
         </Grid>
+
+        {/* Màu background */}
         <Grid item xs={12}>
           <FormControl component="fieldset">
             <FormLabel component="legend">{t("background")}</FormLabel>
@@ -151,17 +154,14 @@ const RecordForm: React.FC<RecordFormProps> = (props) => {
             </RadioGroup>
           </FormControl>
         </Grid>
+
+        {/* Nút Cancel và Submit */}
         <Grid item xs={12}>
           <Button variant="outlined" disabled={disabled} onClick={onCancel}>
             {t("cancel")}
           </Button>
           &nbsp;
-          <Button
-            type="submit"
-            color="primary"
-            variant="contained"
-            disabled={disabled}
-          >
+          <Button type="submit" color="primary" variant="contained" disabled={disabled}>
             {t("submit")}
           </Button>
         </Grid>
