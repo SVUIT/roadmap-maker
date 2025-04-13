@@ -1,4 +1,13 @@
-import {onCLS,onFID,onFCP,onINP,onLCP,onTTFB} from 'web-vitals'
+import {
+  onCLS,
+  onFID,
+  onLCP,
+  onINP,
+  onFCP,
+  onTTFB
+} from 'web-vitals/attribution';
+
+
 const reportWebVitals = (onPerfEntry?: (metric: any) => void) => {
   if (onPerfEntry && onPerfEntry instanceof Function) {
     onCLS(onPerfEntry);
@@ -8,6 +17,6 @@ const reportWebVitals = (onPerfEntry?: (metric: any) => void) => {
     onLCP(onPerfEntry);
     onTTFB(onPerfEntry);
   }
-}
+};
 
 export default reportWebVitals;
